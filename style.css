@@ -1,0 +1,92 @@
+body {
+    margin: 0%;
+}
+
+.header {
+    background-color: #002e56;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+button {
+    padding: 5px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    border-radius: 5px;
+    border: solid 1px #FCF6BA;
+    background-color: #FCF6BA;
+    background-image: linear-gradient(to right, #BF953F, #FBF5B7, #fbf5b7, #BF953F);
+}
+
+.wordbox {
+
+    margin: 20px;
+    background-color: #FCF6BA;
+    background-image: linear-gradient(to right, #BF953F, #FBF5B7, #fbf5b7, #BF953F);
+
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.resultbox {
+    display: block;
+    margin: 20px;
+    width: 40%;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 5px;
+    background-color: #FCF6BA;
+    background-image: linear-gradient(to right, #BF953F, #FBF5B7, #fbf5b7, #BF953F);
+
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin: 30px;
+
+}
+
+.passfail {
+
+    align-items: flex-start;
+    justify-content: left;
+
+}
+
+.timer {
+    background-color: #002e56;
+    border-radius: 5px;
+    margin: 30px;
+    text-align: center;
+    padding: 30px;
+    color: aliceblue;
+}
+
+@media screen and (max-width:768px){
+    header, .container { 
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{font-size: 10px;}
+    .wordbox {min-width: 300px;}
+}

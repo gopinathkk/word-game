@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Word Guess Game</h1>
+        <button id="start">Start</button>
+    </header>
+    <div class="container">
+        <div class="wordbox">
+            <div class="word">
+                <h2 id="wordPuzzle">words here</h2>
+            </div>
+        </div>
+        <div class="resultbox">
+            <div class="results">
+                <div class="passfail">
+                    <p id="wins">Wins : 0</p>
+                    <p id="losses">Losses : 0</p>
+                </div>
+                <div>
+                    <button id="resetBtn">Reset</button>
+                </div>
+            </div>
+            <div class="timer">
+                <h2 id="countDownTime">time</h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
