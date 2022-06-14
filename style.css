@@ -4,8 +4,8 @@ body {
 
 .header {
     background-color: #002e56;
-    border-bottom-left-radius:5px ;
-    border-bottom-right-radius:5px ;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 10px;
     text-align: center;
 }
@@ -82,11 +82,19 @@ button {
     color: aliceblue;
 }
 
-@media screen and (max-width:768px){
-    header, .container { 
+@media screen and (max-width:768px) {
+
+    header,
+    .container {
         flex-direction: column;
         align-items: center;
     }
-    h1{font-size: 10px;}
-    .wordbox {min-width: 300px;}
+
+    h1 {
+        font-size: 10px;
+    }
+
+    .wordbox {
+        min-width: 300px;
+    }
 }

@@ -14,14 +14,13 @@ var wordPuzzle = document.querySelector("#wordPuzzle");
 var wins = document.querySelector("#wins");
 var losses = document.querySelector("#losses");
 var countDownTime = document.querySelector("#countDownTime");
-var resetBtn = document.querySelector("#resetBtn")
-
+var resetBtn = document.querySelector("#resetBtn");
 
 startButton.addEventListener("click", function (event) {
   event.stopImmediatePropagation;
   start = true;
   timer = 30;
-  startButton.textContent="guessing"
+  startButton.textContent = "guessing";
   win = false;
   countDownInterval();
   selectWord();
@@ -36,14 +35,12 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-resetBtn.addEventListener("click", function(event){  
-    solved = 0;
-    unsolved=0;
-    wins.textContent="Wins : " + solved;
-    losses.textContent= "Losses : " + unsolved;
-    
-})
-
+resetBtn.addEventListener("click", function (event) {
+  solved = 0;
+  unsolved = 0;
+  wins.textContent = "Wins : " + solved;
+  losses.textContent = "Losses : " + unsolved;
+});
 
 function countDownInterval() {
   if (start == true && win == false) {
@@ -61,7 +58,7 @@ function countDown() {
     timer = timer - 1;
     if (timer <= 0) {
       start = false;
-      startButton.textContent = "Start"
+      startButton.textContent = "Start";
       clearInterval(time);
       timer = 30;
       countDownTime.textContent = "time over";
@@ -97,11 +94,10 @@ function checkKeyEntry() {
     if (puzzleDisplay.indexOf("_") === -1) {
       clearInterval(time);
       start = false;
-      startButton.textContent = "Start"
+      startButton.textContent = "Start";
       win = true;
       solved++;
       wins.textContent = "Wins : " + solved;
-      
     }
   }
 }
